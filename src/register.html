@@ -1,0 +1,71 @@
+<html>
+<head>
+<link href="./css/mstyle.css" type="text/css" rel="stylesheet">
+<title>注册</title>
+</head>
+<body >
+<script>
+function zchecked(){
+var name1=document.forms["regsiterF"]["uname"].value;
+var pawd1=document.forms["regsiterF"]["paword"].value;
+if (name1==null||name1==""||pawd1==null||pawd1=="")
+{
+alert("姓名密码不能为空！");
+return false;
+}
+}
+</script>
+<div class="body2">
+<div class="body1">
+<div class="head2">
+    </div>
+<div class="head1">
+<br />
+<h1>注册信息</h1>
+</div> 
+<form name="regsiterF" onsubmit="return zchecked()" action="zhuce.jsp"  method="post">
+<div class="text1">
+用户名(必填)：
+<input type="text" name="uname" size="20" maxlength="20" />
+<br />
+<br />
+密 码(必填)：
+<input type="password" name="paword" size="20" maxlength="20" />
+<br />
+</div>
+<div class="text2">
+<div class="head1">
+<h1>个人信息</h1>
+</div>
+<br />
+<br />
+年龄(必填)：
+<input type="text" name="inage" size="20" maxlength="20" />
+<br />
+<br />
+昵称：
+<input type="text" name="nick" size="20" maxlength="20" />
+<br />
+<br />
+宿舍楼号(必填)：
+<input type="text" name="usernum" size="20" maxlength="20" />
+<br />
+<br />
+备注：
+<input type="text" name="inremark" size="20" maxlength="20" />
+<br />
+<br />
+<br />
+<input id="submit" type="submit" value="提交" />
+</form>
+<div class="text4">
+<br />
+<br />
+                          <p> 完成注册你就是西电故事的一员了！</p>
+                          </br>
+                          <p> 鉴证他人的精彩，分享你的精彩，WE等你来！</p>
+                      </div>
+					  </div>
+					  </div>
+</body>
+</html> 

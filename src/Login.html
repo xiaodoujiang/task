@@ -1,0 +1,62 @@
+<html >
+<head>
+    <meta charset="GB2312">
+    <title>西电校园故事登录入口</title>
+    <link href="./css/style.css" type="text/css" rel="stylesheet">
+</head>
+<script>
+function zchecked(){
+var name1=document.forms["regsiterF"]["username"].value;
+var pawd1=document.forms["regsiterF"]["passwd"].value;
+if (name1==null||name1==""||pawd1==null||pawd1=="")
+{
+alert("姓名密码不能为空！");
+return false;
+}
+}
+</script>
+<body >
+            <div class="wrapper">
+                <div class="heading">
+                        <div class="title">
+						<h2>校园的故事</h2>
+						<form name="regsiterF" onsubmit="return zchecked()" align="right" action="login.jsp"  method="post">
+                                用户名：
+                                <input type="text" name="username" size="20" maxlength="20" />
+								<br />
+                              
+                                 密  码：
+                                 <input  type="password" name="passwd" size="20" maxlength="20" />
+								 <br />
+                                <input type="submit" id="button" value="登录" />
+                                <a  href="register.html"><input id="button" type="button" value="注册" /></a>
+						</form>
+                        </div>
+                </div>
+                <div class="video">
+                    <div class="videocolor" align="center">
+						<br	/>
+						<br />
+						<p> 西电</p>
+                        <br />
+						<video id="game"  src="./123.mp4" controls="controls" height="300" width="600" poster="123.jpg" >
+                        </video>
+                    </div>
+                </div>
+                <div class="title2">
+                    <p>身边的精彩</p>
+                </div>
+                <div align="center" class="body1">
+                    <div><img  src="./css/image2.jpg">   <p> 落叶小径的邂逅</p> </div>
+                    <div><img src="./css/image3.jpg">   <p> 阴云下的钟楼</p></div>
+                    <div><img src="./css/image4.jpg">   <p> 远观钟楼</p></div>
+                    <div><img src="./css/image6.jpg">   <p> 郁金香的低语</p></div>
+                    <div><img src="./css/image8.jpg">   <p> 梦境中的西电</p></div>
+                    <div><img src="./css/image9.jpg">   <p> 晴空下</p></div>
+                </div>
+                <div class="body2">
+                        <p> powered by c.c @西电</p>
+                </div>
+            </div>
+</body>
+</html>

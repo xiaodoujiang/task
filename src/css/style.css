@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+ background-color: antiquewhite;
+	box-pack:justify;
+}
+.wrapper{
+    width: 80%;
+    height: 1000px;
+    margin: 0px auto;
+}
+.heading{
+    padding-top: 10px;
+    margin: 0px;
+    width: 100%;
+    height: 86px;
+    background-color: antiquewhite;
+    background-image: url("logo.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    margin: 0px auto;
+}
+.title{
+margin-left: 480px;
+flaot:left;
+}
+
+.videocolor p{
+    color: #57ff1c;
+}
+.title2{
+    padding-top: 30px;
+}
+.title2 p{
+    color: #2546ff;
+    text-align: center;
+}
+.body1{
+    padding-top: 30px;
+	padding-left:130px;
+    margin: 10px;
+    width: 80%;
+    height: 800px;
+    column-width: 260px;
+    column-gap: 5px;
+    -webkit-column-gap: 5px;
+    -webkit-column-width: 260px;
+}
+.body1 div{
+    width: 250px;
+   margin: 5px;
+}
+.body1 div p{
+    color: #ff2e9a;
+}
+.body2{
+    width: 100%;
+    height: 100px;
+}
+.body2 p{
+	text-align: right;
+    color: #ff332f;
+}
+#button{
+	 color: #3e5706;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #a5cd4e 0%, #6b8f1a 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a5cd4e), color-stop(100%,#6b8f1a)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%); /* IE10+ */
+    background: linear-gradient(top,  #a5cd4e 0%,#6b8f1a 100%); /* W3C */
+	display: inline-block;
+    position: relative;
+    margin: 10px;
+    padding: 0 20px;
+    text-align: center;
+    text-decoration: none;
+    font: bold 12px/25px Arial, sans-serif;
+    text-shadow: 1px 1px 1px rgba(255,255,255, .22);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+    -moz-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+    box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+    -webkit-transition: all 0.15s ease;
+    -moz-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+    -ms-transition: all 0.15s ease;
+    transition: all 0.15s ease
+}
+

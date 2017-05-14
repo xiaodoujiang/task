@@ -1,0 +1,88 @@
+<html>
+<link rel="stylesheet" type="text/css"
+href="./css/atuser.css" />
+<head>
+<title>创建故事</title>
+</head>
+<body >
+<script>
+function zchecked(){
+var name1=document.forms["storycreate"]["storyname"].value;
+var pawd1=document.forms["storycreate"]["storytext"].value;
+if (name1==null||name1==""||pawd1==null||pawd1=="")
+{
+alert("故事名和内容不能为空！");
+return false;
+}
+}
+</script>
+<h1>故事信息</h1>
+<form name="storycreate" onsubmit="return zchecked()" action="storyc.jsp"  method="post">
+故事名(必填)：
+<br />
+<br />
+<input type="text" name="storyname" size="20" maxlength="20" />
+<br />
+<br />
+故事发生地点：
+<br />
+<br />
+<select name="location" >
+<option value="null"  selected="selected">NULL</option>
+<option value="A楼">A楼</option>
+<option value="B楼">B楼</option>
+<option value="C楼">C楼</option>
+<option value="D楼">D楼</option>
+<option value="E楼">E楼</option>
+<option value="F楼">F楼</option>
+<option value="G楼">G楼</option>
+<option value="竹园">竹园</option>
+<option value="海棠">海棠</option>
+<option value="丁香">丁香</option>
+<option value="南操场">南操场</option>
+<option value="北操场">北操场</option>
+<option value="北校区">北校区</option>
+<option value="校车">校车</option>
+</select>
+<br />
+<br />
+故事发生时间：
+<br />
+<br />
+<select name="year" >
+<option value="2015" selected="selected">2015</option>
+<option value="2014" >2014</option>
+<option value="2013" >2013</option>
+<option value="2012" >2012</option>
+<option value="2011" >2011</option>
+<option value="1999">很久之前</option>
+</select>
+年
+<select name="month"  >
+<option value="1" selected="selected">1</option>
+<option value="2" >2</option>
+<option value="3" >3</option>
+<option value="4" >4</option>
+<option value="5" >5</option>
+<option value="6" >6</option>
+<option value="7" >7</option>
+<option value="8" >8</option>
+<option value="9" >9</option>
+<option value="10" >10</option>
+<option value="11" >11</option>
+<option value="12" >12</option>
+</select>
+月
+<br />
+<br />
+故事内容(必填)：
+<br />
+<br />
+<textarea name="storytext" rows="10" cols="50" maxlength="500" >
+</textarea>
+<br />
+<br />
+<input id="submit" type="submit" value="提交" />
+</form>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html >
+<link rel="stylesheet" type="text/css"
+href="./css/atuser.css" />
+<head>
+<title>关注</title>
+</head>
+<body>
+<script>
+function checke(){
+var name=document.forms["at"]["name"].value;
+if (name==null||name=="")
+{
+alert("名字不能为空！");
+return false;
+}
+}
+</script>
+<h1>取消关注</h1>
+<form name="at"  action="offuser.jsp" onsubmit="return checke()" method="post">
+输入名字：
+<input type="text" size="20" name="name" />
+<br />
+<br />
+<input id="submit" type="submit" value="确定" />
+</form>
+</body>
+</html>
